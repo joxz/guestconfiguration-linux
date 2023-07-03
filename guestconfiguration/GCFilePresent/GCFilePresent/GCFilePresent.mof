@@ -1,0 +1,25 @@
+
+instance of nxFile as $nxFile1ref
+{
+ModuleVersion = "1.0.0";
+ ResourceID = "[nxFile]GCFilePresent";
+ Force = True;
+ Group = "root";
+ SourceInfo = "/workspaces/guestconfiguration-linux/guestconfiguration/GCFilePresent/source/GCPackages/GCFilePresent/GCFilePresent.config.ps1::5::9::NxFile";
+ Type = "File";
+ Ensure = "Present";
+ Mode = "0777";
+ ModuleName = "nxtools";
+ Contents = "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST";
+ Owner = "root";
+ DestinationPath = "/tmp/00dummy.txt";
+ ConfigurationName = "GCFilePresent";
+};
+
+instance of OMI_ConfigurationDocument
+{
+ Version="2.0.0";
+ MinimumCompatibleVersion = "1.0.0";
+ CompatibleVersionAdditionalProperties= {"Omi_BaseResource:ConfigurationName"};
+ Name="GCFilePresent";
+};

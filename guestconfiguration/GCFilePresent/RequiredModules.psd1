@@ -1,0 +1,37 @@
+@{
+    PSDependOptions             = @{
+        AddToPath  = $true
+        Target     = 'output\RequiredModules'
+        Parameters = @{
+            Repository = 'PSGallery'
+        }
+    }
+
+    InvokeBuild                 = 'latest'
+    PSScriptAnalyzer            = 'latest'
+    Pester                      = 'latest'
+    ModuleBuilder               = 'latest'
+    ChangelogManagement         = 'latest'
+    Sampler                     = 'latest'
+    'Sampler.GitHubTasks'       = 'latest'
+    MarkdownLinkCheck           = 'latest'
+    'DscResource.Common'        = 'latest'
+    'DscResource.Test'          = 'latest'
+    'DscResource.AnalyzerRules' = 'latest'
+    xDscResourceDesigner        = 'latest'
+    'DscResource.DocGenerator'  = 'latest'
+    nxtools                     = 'latest'
+    GuestConfiguration = @{
+      Version = 'latest'
+      Parameters = @{
+            AllowPrerelease = $true
+      }
+   }
+   PSDesiredStateConfiguration = @{
+      Version = '3.0.0-beta1'
+      Parameters = @{
+            AllowPrerelease = $true
+      }
+   }
+}
+
