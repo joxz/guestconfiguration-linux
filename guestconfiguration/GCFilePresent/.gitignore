@@ -1,5 +1,6 @@
-output/
-
+output/*
+!output/GCPackages
+!output/GCPackages/*
 **.bak
 *.local.*
 !**/README.md
